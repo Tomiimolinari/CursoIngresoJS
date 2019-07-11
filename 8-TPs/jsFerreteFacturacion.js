@@ -3,15 +3,51 @@ A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
-function Sumar () 
-{
-	
+function Sumar() {
+  var precioUno;
+  var precioDos;
+  var precioTres;
+
+  precioUno = document.getElementById("PrecioUno").value;
+  precioDos = document.getElementById("PrecioDos").value;
+  precioTres = document.getElementById("PrecioTres").value;
+
+  alert(parseInt(precioUno) + parseInt(precioDos) + parseInt(precioTres));
+
+
 }
-function Promedio () 
-{
-	
+function Promedio() {
+  var precioUno;
+  var precioDos;
+  var precioTres;
+
+  precioUno = document.getElementById("PrecioUno").value;
+  precioDos = document.getElementById("PrecioDos").value;
+  precioTres = document.getElementById("PrecioTres").value;
+
+  alert((parseInt(precioUno) + parseInt(precioDos) + parseInt(precioTres)) / 3);
 }
-function PrecioFinal () 
-{
-	
+function PrecioFinal() {
+  var precioUno;
+  var precioDos;
+  var precioTres;
+  var TipoDeIva;
+  var IVA;
+  var Pfinal;
+
+  precioUno = document.getElementById("PrecioUno").value;
+
+  precioDos = document.getElementById("PrecioDos").value;
+
+  precioTres = document.getElementById("PrecioTres").value;
+
+  TipoDeIva = 21;
+
+  IVA = (TipoDeIva / 100);
+
+  Pfinal = (parseInt(precioUno) + parseInt(precioDos) + parseInt(precioTres));
+
+  alert(Pfinal + (Pfinal * IVA))
+
+
 }
